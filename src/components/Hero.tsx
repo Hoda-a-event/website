@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { ArrowRight, Play } from "lucide-react";
+import { motion } from 'framer-motion';
+import { ArrowRight, Play } from 'lucide-react';
 
 import Link from "next/link";
 const Hero = () => {
@@ -32,7 +32,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
             className="text-center lg:text-left"
           >
             <motion.h1
@@ -50,7 +50,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl text-secondary font-medium mb-8"
             >
-              Connecting Communities. Empowering Events.
+              Where events become experiences, and groups become communities.
             </motion.p>
 
             <motion.p
@@ -91,8 +91,8 @@ const Hero = () => {
                 </div>
               </div>
               <p className="text-center text-sm text-faded-text mt-2 font-medium">
-                🚀 The only platform marketing directly to WhatsApp & Email in
-                Nigeria
+                🚀 We get your events directly in front of the right audiences,
+                transforming communication from broadcast into a conversation.
               </p>
             </motion.div>
 
@@ -113,13 +113,13 @@ const Hero = () => {
                 />
               </Link>
 
-              <button className="group bg-white/20 backdrop-blur-sm border border-white/30 text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
+              {/* <button className="group bg-white/20 backdrop-blur-sm border border-white/30 text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
                 <Play
                   className="mr-2 group-hover:scale-110 transition-transform duration-300"
                   size={20}
                 />
                 Watch Demo
-              </button>
+              </button> */}
             </motion.div>
           </motion.div>
 
@@ -147,10 +147,10 @@ const Hero = () => {
 
                 <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-6 text-white">
                   <h3 className="text-2xl font-bold mb-2">
-                    Event Marketing Hub
+                    Event Promotion Engine
                   </h3>
                   <p className="text-white/90">
-                    WhatsApp + Email event notifications
+                    WhatsApp + Email event notification
                   </p>
                 </div>
 
@@ -159,9 +159,7 @@ const Hero = () => {
                     <div className="w-8 h-8 bg-green-500 rounded-lg mb-3 flex items-center justify-center">
                       <span className="text-white font-bold text-xs">W</span>
                     </div>
-                    <h4 className="font-semibold text-primary">
-                      WhatsApp Marketing
-                    </h4>
+                    <h4 className="font-semibold text-primary">WhatsApp</h4>
                     <p className="text-sm text-faded-text mt-1">
                       Direct audience reach
                     </p>
@@ -171,9 +169,7 @@ const Hero = () => {
                     <div className="w-8 h-8 bg-red-500 rounded-lg mb-3 flex items-center justify-center">
                       <span className="text-white font-bold text-xs">G</span>
                     </div>
-                    <h4 className="font-semibold text-primary">
-                      Email Marketing
-                    </h4>
+                    <h4 className="font-semibold text-primary">Email</h4>
                     <p className="text-sm text-faded-text mt-1">
                       Professional outreach
                     </p>
@@ -201,7 +197,7 @@ const Hero = () => {
             {/* Floating elements */}
             <motion.div
               animate={{ y: [-10, 10, -10] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
               className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-tertiary to-tertiary/70 rounded-2xl shadow-lg"
             ></motion.div>
 
@@ -210,7 +206,7 @@ const Hero = () => {
               transition={{
                 duration: 3,
                 repeat: Infinity,
-                ease: "easeInOut",
+                ease: 'easeInOut',
                 delay: 0.5,
               }}
               className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-secondary to-secondary/70 rounded-xl shadow-lg"

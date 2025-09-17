@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import {
   Mail,
   Phone,
@@ -10,42 +10,46 @@ import {
   Instagram,
   Linkedin,
   Heart,
-} from "lucide-react";
-import Image from "next/image";
+} from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
   const footerLinks = {
     product: [
-      { name: "Features", href: "#features" },
-      { name: "Pricing", href: "#pricing" },
-      { name: "API", href: "#api" },
-      { name: "Documentation", href: "#docs" },
+      { name: 'Features', href: '#features' },
+      { name: 'Pricing', href: '#pricing' },
+      { name: 'API', href: '#api' },
+      { name: 'Documentation', href: '#docs' },
     ],
     company: [
-      { name: "About Us", href: "#about" },
-      { name: "Careers", href: "#careers" },
-      { name: "Press", href: "#press" },
-      { name: "Blog", href: "#blog" },
+      { name: 'About Us', href: '#about' },
+      { name: 'Careers', href: '#careers' },
+      { name: 'Press', href: '#press' },
+      { name: 'Blog', href: '#blog' },
     ],
     support: [
-      { name: "Help Center", href: "#help" },
-      { name: "Contact Us", href: "#contact" },
-      { name: "Privacy Policy", href: "#privacy" },
-      { name: "Terms of Service", href: "#terms" },
+      { name: 'Help Center', href: '#help' },
+      { name: 'Contact Us', href: '#contact' },
+      { name: 'Privacy Policy', href: '#privacy' },
+      { name: 'Terms of Service', href: '#terms' },
     ],
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", name: "Facebook" },
-    { icon: Twitter, href: "#", name: "Twitter" },
-    { icon: Instagram, href: "#", name: "Instagram" },
-    { icon: Linkedin, href: "#", name: "LinkedIn" },
+    // { icon: Facebook, href: '#', name: 'Facebook' },
+    // { icon: Twitter, href: '#', name: 'Twitter' },
+    // { icon: Instagram, href: '#', name: 'Instagram' },
+    {
+      icon: Linkedin,
+      href: 'https://www.linkedin.com/company/hoda-a',
+      name: 'LinkedIn',
+    },
   ];
 
   const contactInfo = [
-    { icon: Mail, text: "hello@hodaa.com", href: "mailto:hello@hodaa.com" },
-    { icon: Phone, text: "+234 (0) 123 456 789", href: "tel:+2341234567890" },
-    { icon: MapPin, text: "Lagos, Nigeria", href: "#" },
+    { icon: Mail, text: 'admin@hodaa.live', href: 'mailto:admin@hodaa.live' },
+    { icon: Phone, text: '+234 (0) 906 953 2735', href: 'tel:+23409069532735' },
+    { icon: MapPin, text: 'Lagos, Nigeria', href: '#' },
   ];
 
   return (
@@ -82,11 +86,12 @@ const Footer = () => {
                 <h2 className="text-4xl font-bold">Hoda&apos;a</h2>
               </div>
               <p className="text-white/80 text-lg mb-6 leading-relaxed">
-                Connecting Communities. Empowering Events.
+                Experience Events. Build Communities.
               </p>
               <p className="text-white/70 mb-8 leading-relaxed">
-                Building the future of community engagement with intelligent,
-                respectful communication tools designed for the Nigerian market.
+                At Hoda’a, we make events more than just gatherings - we
+                transform them into experiences, while helping groups grow into
+                thriving communities.
               </p>
 
               {/* Contact Info */}
@@ -109,7 +114,7 @@ const Footer = () => {
             </motion.div>
 
             {/* Links Sections */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -128,7 +133,7 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -190,8 +195,8 @@ const Footer = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
-                  type="gmail"
-                  placeholder="Enter your gmail"
+                  type="Email"
+                  placeholder="Enter your Email"
                   className="flex-1 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent"
                 />
                 <button className="px-8 py-3 bg-tertiary hover:bg-tertiary/90 text-white rounded-full font-semibold transition-colors duration-300 hover:shadow-lg">
@@ -215,7 +220,7 @@ const Footer = () => {
                 className="flex items-center space-x-2 text-white/70"
               >
                 <span>
-                  © 2025 Hoda&apos;a. Connecting Communities, Respectfully.
+                  © 2025 Hoda&apos;a. Experience Events. Build Communities.
                 </span>
                 <Heart size={16} className="text-tertiary" />
               </motion.div>

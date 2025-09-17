@@ -1,64 +1,64 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { CheckCircle, TrendingUp, Users, Zap, Shield } from "lucide-react";
-import RadarChart from "./RadarChart";
+import { motion } from 'framer-motion';
+import { CheckCircle, TrendingUp, Users, Zap, Shield } from 'lucide-react';
+import RadarChart from './RadarChart';
 
 const Impact = () => {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "Increased Attendance",
+      title: 'Increased Attendance',
       description:
-        "Relevant, timely reminders drive participation and reduce no-shows.",
-      color: "text-green-600",
-      bgColor: "bg-green-50",
+        'Relevant, timely reminders drive participation and reduce no-shows.',
+      color: 'text-green-600',
+      bgColor: 'bg-green-50',
     },
     {
       icon: Users,
-      title: "Stronger Community",
+      title: 'Stronger Community',
       description:
-        "Members feel respected and informed, leading to higher trust and satisfaction.",
-      color: "text-blue-600",
-      bgColor: "bg-blue-50",
+        'Members feel respected and informed, leading to higher trust and satisfaction.',
+      color: 'text-blue-600',
+      bgColor: 'bg-blue-50',
     },
     {
       icon: Zap,
-      title: "Wider Reach",
+      title: 'Wider Reach',
       description:
-        "Promoted events effectively reach new, interested audiences, driving growth.",
-      color: "text-purple-600",
-      bgColor: "bg-purple-50",
+        'Promoted events effectively reach new, interested audiences, driving growth.',
+      color: 'text-purple-600',
+      bgColor: 'bg-purple-50',
     },
     {
       icon: Shield,
-      title: "Reduced Admin Burden",
+      title: 'Reduced Admin Burden',
       description:
-        "Automation of communication tasks frees up organizers to focus on creating great events.",
-      color: "text-orange-600",
-      bgColor: "bg-orange-50",
+        'Automation of event promotion tasks frees up organizers to focus on creating great events.',
+      color: 'text-orange-600',
+      bgColor: 'bg-orange-50',
     },
   ];
 
   const radarData = {
     labels: [
-      "Attendance",
-      "Engagement",
-      "User Trust",
-      "Event Reach",
-      "Admin Efficiency",
+      'Attendance',
+      'Engagement',
+      'User Trust',
+      'Event Reach',
+      'Admin Efficiency',
     ],
     datasets: [
       {
         label: "Hoda'a Impact",
         data: [85, 90, 95, 80, 88],
-        backgroundColor: "rgba(247, 106, 78, 0.2)",
-        borderColor: "#F76A4E",
+        backgroundColor: 'rgba(247, 106, 78, 0.2)',
+        borderColor: '#F76A4E',
         borderWidth: 3,
-        pointBackgroundColor: "#F76A4E",
-        pointBorderColor: "#fff",
-        pointHoverBackgroundColor: "#fff",
-        pointHoverBorderColor: "#F76A4E",
+        pointBackgroundColor: '#F76A4E',
+        pointBorderColor: '#fff',
+        pointHoverBackgroundColor: '#fff',
+        pointHoverBorderColor: '#F76A4E',
       },
     ],
   };
@@ -96,9 +96,9 @@ const Impact = () => {
             The Hoda'a Impact
           </h2>
           <p className="text-lg text-faded-text max-w-4xl mx-auto leading-relaxed">
-            By transforming communication from a simple broadcast into a
-            respectful, intelligent conversation, Hoda'a delivers significant
-            value across key metrics for both organizers and attendees.
+            By transforming event promotion from a broadcast into a respectful,
+            intelligent conversation, Hoda'a delivers significant value across
+            key metrics for both organizers and attendees.
           </p>
         </motion.div>
 
@@ -227,7 +227,7 @@ const Impact = () => {
         >
           <div className="bg-white/30 backdrop-blur-xl border border-white/30 rounded-3xl p-8 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-primary mb-4">
-              Ready to Transform Your Community?
+              Ready to Transform Your Community Events?
             </h3>
             <p className="text-lg text-faded-text mb-6">
               Join hundreds of organizations already using Hoda'a to build
