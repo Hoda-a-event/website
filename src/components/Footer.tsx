@@ -4,11 +4,7 @@ import { motion } from 'framer-motion';
 import {
   Mail,
   Phone,
-  MapPin,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
+  MapPin, Linkedin,
   Heart,
 } from 'lucide-react';
 import Image from 'next/image';
