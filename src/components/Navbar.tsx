@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -46,9 +47,18 @@ const Navbar = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex-shrink-0"
           >
-            <h1 className="text-2xl md:text-3xl font-bold text-primary">
-              Hoda'a
-            </h1>
+            <div className="flex items-center space-x-3">
+              <Image
+                src="/images/hodaa-favicon.png"
+                alt="Hoda'a Logo"
+                width={120}
+                height={120}
+                className="w-[120px] h-[120px]"
+              />
+              <h1 className="text-2xl md:text-3xl font-bold text-primary">
+                {/* Hoda'a */}
+              </h1>
+            </div>
           </motion.div>
 
           {/* Desktop Navigation */}

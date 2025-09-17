@@ -6,7 +6,7 @@ import { Calendar, Users, Search, Bell, Target, Shield } from "lucide-react";
 const CoreFeatures = () => {
   const eventMarketingFeatures = [
     { name: "WhatsApp Marketing", value: 95, color: "#25D366" },
-    { name: "Gmail Campaigns", value: 90, color: "#EA4335" },
+    { name: "gmail Campaigns", value: 90, color: "#EA4335" },
     { name: "Event Promotion", value: 85, color: "#F76A4E" },
     { name: "Audience Targeting", value: 88, color: "#4348C0" },
     { name: "Performance Analytics", value: 82, color: "#FFB347" },
@@ -83,7 +83,7 @@ const CoreFeatures = () => {
                 />
               </div>
 
-              {/* WhatsApp & Gmail Highlight */}
+              {/* WhatsApp & gmail Highlight */}
               <div className="bg-gradient-to-r from-green-100 to-red-100 border-2 border-green-300 rounded-2xl p-4 mb-6">
                 <div className="flex items-center justify-center space-x-4">
                   <div className="flex items-center space-x-2">
@@ -97,11 +97,11 @@ const CoreFeatures = () => {
                     <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">G</span>
                     </div>
-                    <span className="font-bold text-red-700">Gmail</span>
+                    <span className="font-bold text-red-700">gmail</span>
                   </div>
                 </div>
                 <p className="text-center text-sm font-bold text-primary mt-2">
-                  🚀 Nigeria's Only WhatsApp + Gmail Event Marketing Platform
+                  🚀 Nigeria's Only WhatsApp + gmail Event Marketing Platform
                 </p>
               </div>
 
@@ -115,7 +115,7 @@ const CoreFeatures = () => {
                   </h3>
                   <p className="text-faded-text mt-2">
                     The first platform to market events directly through
-                    WhatsApp & Gmail, reaching audiences where they actually
+                    WhatsApp & gmail, reaching audiences where they actually
                     check messages daily.
                   </p>
                 </div>

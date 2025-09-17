@@ -11,22 +11,53 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "PFP Maker - Create Your Avatar",
-  description: "Create custom profile pictures with our drag & drop editor.",
-  keywords: ["PFP", "avatar", "profile picture", "creator", "editor"],
-  authors: [{ name: "PFP Maker Team" }],
+  title: "Hoda'a - Nigeria's First WhatsApp + gmail Event Marketing Platform",
+  description:
+    "Revolutionary event marketing platform connecting organizers with their audience through WhatsApp and gmail. Launch your events to success with Nigeria's most advanced marketing solution.",
+  keywords: [
+    "event marketing",
+    "WhatsApp marketing",
+    "gmail marketing",
+    "event promotion",
+    "Nigeria events",
+    "event organizers",
+    "marketing platform",
+    "event management",
+    "audience engagement",
+    "event success",
+  ],
+  authors: [{ name: "Hoda'a Team" }],
   openGraph: {
-    title: "PFP Maker - Create Your Avatar",
-    description: "Create custom profile pictures with our drag & drop editor.",
+    title: "Hoda'a - Revolutionary Event Marketing Platform",
+    description:
+      "Nigeria's first WhatsApp + gmail event marketing platform. Transform how you promote events and connect with your audience.",
     images: ["/og.png"],
     type: "website",
+    siteName: "Hoda'a",
+    locale: "en_NG",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PFP Maker",
-    description: "Create your perfect avatar",
+    title: "Hoda'a - Event Marketing Revolution",
+    description:
+      "Nigeria's first WhatsApp + gmail event marketing platform launching soon. Join the waitlist!",
     images: ["/og.png"],
+    creator: "@hodaa_ng",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  viewport: "width=device-width, initial-scale=1",
+  themeColor: "#003B75",
+  category: "technology",
 };
 
 export default function RootLayout({
@@ -36,10 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className="font-sans antialiased">
-       
-        {children}
-      </body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }

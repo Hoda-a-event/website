@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Mail, CheckCircle, Loader2, Users, Gift, Zap } from "lucide-react";
 
 const WaitlistForm = () => {
-  const [email, setEmail] = useState("");
+  const [gmail, setgmail] = useState("");
   const [name, setName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -71,10 +71,10 @@ const WaitlistForm = () => {
             </div>
             <div>
               <input
-                type="email"
-                placeholder="Your Email Address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                type="gmail"
+                placeholder="Your gmail Address"
+                value={gmail}
+                onChange={(e) => setgmail(e.target.value)}
                 required
                 className="w-full px-4 py-3 bg-white/90 border border-white/40 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
               />

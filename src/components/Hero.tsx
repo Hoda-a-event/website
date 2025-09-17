@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
 
+import Link from "next/link";
 const Hero = () => {
   return (
     <section
@@ -11,8 +12,7 @@ const Hero = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
-        <img
-          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        <img          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
           alt="Community gathering"
           className="w-full h-full object-cover"
         />
@@ -63,7 +63,7 @@ const Hero = () => {
               through the channels your audience actually uses.
             </motion.p>
 
-            {/* WhatsApp & Gmail Highlight */}
+            {/* WhatsApp & Email Highlight */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -73,24 +73,24 @@ const Hero = () => {
               <div className="flex items-center justify-center space-x-6">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">W</span>
+                    <span className="text-primary font-bold text-sm">W</span>
                   </div>
                   <span className="font-bold text-green-700">
-                    WhatsApp Integration
+                    WhatsApp Marketing
                   </span>
                 </div>
                 <div className="text-primary font-bold">+</div>
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">G</span>
+                    <span className="text-primary font-bold text-sm">G</span>
                   </div>
                   <span className="font-bold text-red-700">
-                    Gmail Marketing
+                    Email Marketing
                   </span>
                 </div>
               </div>
               <p className="text-center text-sm text-faded-text mt-2 font-medium">
-                🚀 The only platform marketing directly to WhatsApp & Gmail in
+                🚀 The only platform marketing directly to WhatsApp & Email in
                 Nigeria
               </p>
             </motion.div>
@@ -101,7 +101,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <a
+              <Link
                 href="/waitlist"
                 className="group bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center"
               >
@@ -110,7 +110,7 @@ const Hero = () => {
                   className="ml-2 group-hover:translate-x-1 transition-transform duration-300"
                   size={20}
                 />
-              </a>
+              </Link>
 
               <button className="group bg-white/20 backdrop-blur-sm border border-white/30 text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
                 <Play
@@ -149,7 +149,7 @@ const Hero = () => {
                     Event Marketing Hub
                   </h3>
                   <p className="text-white/90">
-                    WhatsApp + Gmail marketing automation
+                    WhatsApp + Email event notifications
                   </p>
                 </div>
 
@@ -171,7 +171,7 @@ const Hero = () => {
                       <span className="text-white font-bold text-xs">G</span>
                     </div>
                     <h4 className="font-semibold text-primary">
-                      Gmail Integration
+                      Email Marketing
                     </h4>
                     <p className="text-sm text-faded-text mt-1">
                       Professional outreach
@@ -186,7 +186,7 @@ const Hero = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-primary">
-                        WhatsApp & Gmail Marketing
+                        WhatsApp & Email Marketing
                       </h4>
                       <p className="text-sm text-faded-text">
                         Nigeria's #1 choice

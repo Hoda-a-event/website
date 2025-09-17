@@ -33,9 +33,9 @@ const SmartNotificationFlow = () => {
     },
     {
       number: 4,
-      title: "WhatsApp & Gmail Dispatch",
+      title: "WhatsApp & gmail Dispatch",
       description:
-        "Messages are instantly delivered via WhatsApp (primary) and Gmail (backup) - the two platforms Nigerians check most.",
+        "Messages are instantly delivered via WhatsApp (primary) and gmail (backup) - the two platforms Nigerians check most.",
       icon: Send,
       color: "from-green-500 to-red-500",
       bgColor: "bg-gradient-to-r from-green-50 to-red-50",
@@ -70,15 +70,15 @@ const SmartNotificationFlow = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            The WhatsApp + Gmail Marketing Flow
+            The WhatsApp + gmail Marketing Flow
           </h2>
           <p className="text-xl text-faded-text max-w-4xl mx-auto leading-relaxed mb-6">
             This is Hoda'a's breakthrough. The first platform to deliver event
-            marketing directly through WhatsApp and Gmail - where Nigerians
+            marketing directly through WhatsApp and gmail - where Nigerians
             actually check messages.
           </p>
 
-          {/* WhatsApp & Gmail Emphasis */}
+          {/* WhatsApp & gmail Emphasis */}
           <div className="bg-gradient-to-r from-green-100 to-red-100 border-2 border-green-300 rounded-2xl p-6 max-w-3xl mx-auto">
             <div className="flex items-center justify-center space-x-8">
               <div className="text-center">
@@ -93,7 +93,7 @@ const SmartNotificationFlow = () => {
                 <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-2">
                   <span className="text-white font-bold text-xl">G</span>
                 </div>
-                <h3 className="font-bold text-red-700">Gmail Backup</h3>
+                <h3 className="font-bold text-red-700">gmail Backup</h3>
                 <p className="text-sm text-faded-text">Professional reach</p>
               </div>
             </div>

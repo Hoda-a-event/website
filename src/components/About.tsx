@@ -70,14 +70,14 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-faded-text mb-8 leading-relaxed">
               We discovered a game-changing insight: Nigerians check WhatsApp
-              and Gmail daily, but event organizers were still using outdated
+              and gmail daily, but event organizers were still using outdated
               methods to reach them. Hoda'a bridges this gap with Nigeria's
-              first WhatsApp + Gmail event marketing platform.
+              first WhatsApp + gmail event marketing platform.
             </p>
             <p className="text-lg text-faded-text leading-relaxed">
               Our revolutionary dual-channel approach transforms event
               marketing, delivering messages where people actually look - their
-              WhatsApp and Gmail.
+              WhatsApp and gmail.
             </p>
           </div>
         </motion.div>
@@ -126,7 +126,7 @@ const About = () => {
             </h3>
             <p className="text-xl text-faded-text leading-relaxed mb-8">
               "To revolutionize event marketing in Nigeria by delivering
-              targeted, respectful communication through WhatsApp and Gmail -
+              targeted, respectful communication through WhatsApp and gmail -
               the platforms Nigerians trust and check daily."
             </p>
             <div className="flex justify-center space-x-6">
@@ -141,7 +141,7 @@ const About = () => {
                 <div className="text-faded-text">Primary Channel</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-red-600">Gmail</div>
+                <div className="text-2xl font-bold text-red-600">gmail</div>
                 <div className="text-faded-text">Professional Reach</div>
               </div>
               <div className="text-center">

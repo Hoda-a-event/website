@@ -9,11 +9,11 @@ const UserPersonas = () => {
       name: "Pastor Seyi",
       role: "The Community Leader",
       description:
-        "Uses WhatsApp & Gmail marketing to reach his congregation about services and events, boosting attendance through targeted messaging.",
+        "Uses WhatsApp & gmail marketing to reach his congregation about services and events, boosting attendance through targeted messaging.",
       image:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       chartData: {
-        labels: ["WhatsApp Marketing", "Event Creation", "Gmail Campaigns"],
+        labels: ["WhatsApp Marketing", "Event Creation", "gmail Campaigns"],
         datasets: [
           {
             data: [60, 25, 15],
@@ -28,11 +28,11 @@ const UserPersonas = () => {
       name: "Micheal",
       role: "The Event Enthusiast",
       description:
-        "Discovers amazing events through WhatsApp notifications and Gmail updates, never missing out on professional networking opportunities.",
+        "Discovers amazing events through WhatsApp notifications and gmail updates, never missing out on professional networking opportunities.",
       image:
         "https://images.unsplash.com/photo-1494790108755-2616b332c3c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       chartData: {
-        labels: ["WhatsApp Alerts", "Event Discovery", "Gmail Updates"],
+        labels: ["WhatsApp Alerts", "Event Discovery", "gmail Updates"],
         datasets: [
           {
             data: [50, 30, 20],
@@ -47,11 +47,11 @@ const UserPersonas = () => {
       name: "Mr. Tim",
       role: "The Event Organizer",
       description:
-        "Maximizes workshop attendance using WhatsApp & Gmail marketing to reach new paying customers and automate follow-ups.",
+        "Maximizes workshop attendance using WhatsApp & gmail marketing to reach new paying customers and automate follow-ups.",
       image:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
       chartData: {
-        labels: ["WhatsApp Promotion", "Gmail Marketing", "Event Creation"],
+        labels: ["WhatsApp Promotion", "gmail Marketing", "Event Creation"],
         datasets: [
           {
             data: [45, 35, 20],
@@ -85,11 +85,11 @@ const UserPersonas = () => {
             Built for Real People
           </h2>
           <p className="text-lg text-faded-text max-w-3xl mx-auto leading-relaxed mb-8">
-            Real Nigerian professionals using WhatsApp & Gmail marketing to
+            Real Nigerian professionals using WhatsApp & gmail marketing to
             transform their event attendance and community engagement.
           </p>
 
-          {/* WhatsApp & Gmail Highlight */}
+          {/* WhatsApp & gmail Highlight */}
           <div className="bg-gradient-to-r from-green-100 via-white to-red-100 border-2 border-green-300 rounded-3xl p-6 max-w-2xl mx-auto mb-8">
             <div className="text-center">
               <div className="flex items-center justify-center space-x-6 mb-4">
@@ -106,14 +106,14 @@ const UserPersonas = () => {
                   <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-lg">G</span>
                   </div>
-                  <span className="font-bold text-red-700 text-xl">Gmail</span>
+                  <span className="font-bold text-red-700 text-xl">gmail</span>
                 </div>
               </div>
               <p className="text-lg font-bold text-primary">
                 🎯 The channels Nigerians actually use daily
               </p>
               <p className="text-sm text-faded-text mt-2">
-                98% of Nigerians check WhatsApp daily • 85% check Gmail
+                98% of Nigerians check WhatsApp daily • 85% check gmail
                 regularly
               </p>
             </div>

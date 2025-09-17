@@ -11,6 +11,7 @@ import {
   Linkedin,
   Heart,
 } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   const footerLinks = {
@@ -70,7 +71,16 @@ const Footer = () => {
               viewport={{ once: true }}
               className="lg:col-span-2"
             >
-              <h2 className="text-4xl font-bold mb-4">Hoda'a</h2>
+              <div className="flex items-center space-x-3 mb-4">
+                <Image
+                  src="/images/hodaa-favicon.png"
+                  alt="Hoda'a Logo"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10"
+                />
+                <h2 className="text-4xl font-bold">Hoda'a</h2>
+              </div>
               <p className="text-white/80 text-lg mb-6 leading-relaxed">
                 Connecting Communities. Empowering Events.
               </p>
@@ -180,8 +190,8 @@ const Footer = () => {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <input
-                  type="email"
-                  placeholder="Enter your email"
+                  type="gmail"
+                  placeholder="Enter your gmail"
                   className="flex-1 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-transparent"
                 />
                 <button className="px-8 py-3 bg-tertiary hover:bg-tertiary/90 text-white rounded-full font-semibold transition-colors duration-300 hover:shadow-lg">

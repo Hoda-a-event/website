@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import CountdownTimer from '../../components/CountdownTimer';
-import WaitlistForm from '../../components/WaitlistForm';
+import { motion } from "framer-motion";
+import CountdownTimer from "../../components/CountdownTimer";
+import WaitlistForm from "../../components/WaitlistForm";
 
 const WaitlistPage = () => {
   return (
@@ -15,7 +15,7 @@ const WaitlistPage = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-secondary/70 to-tertiary/80"></div>
-        
+
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl animate-pulse delay-1000"></div>
@@ -66,17 +66,19 @@ const WaitlistPage = () => {
                 <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                 <span className="text-white font-semibold">LAUNCHING SOON</span>
               </div>
-              
+
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
                 Nigeria's First
                 <span className="block bg-gradient-to-r from-green-400 via-yellow-300 to-red-400 bg-clip-text text-transparent">
-                  WhatsApp + Gmail
+                  WhatsApp + gmail
                 </span>
                 Event Marketing Platform
               </h2>
-              
+
               <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-                🚀 Get ready for the revolutionary platform that will transform how you promote events and connect with your audience in Nigeria.
+                🚀 Get ready for the revolutionary platform that will transform
+                how you promote events and connect with your audience in
+                Nigeria.
               </p>
             </motion.div>
 
@@ -103,11 +105,12 @@ const WaitlistPage = () => {
                 🎯 Join the Revolution
               </h3>
               <p className="text-lg text-white/80 mb-8 max-w-2xl mx-auto">
-                Be among the first 500 event organizers to experience the future of event marketing in Nigeria.
+                Be among the first 500 event organizers to experience the future
+                of event marketing in Nigeria.
               </p>
-              
+
               <WaitlistForm />
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -126,7 +129,9 @@ const WaitlistPage = () => {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 text-center">
                   <div className="text-2xl mb-2">🚀</div>
-                  <p className="text-white font-semibold text-sm">Beta Features</p>
+                  <p className="text-white font-semibold text-sm">
+                    Beta Features
+                  </p>
                   <p className="text-white/70 text-xs">First Access</p>
                 </div>
               </motion.div>
