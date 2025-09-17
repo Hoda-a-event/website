@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 
@@ -44,7 +43,7 @@ const DonutChart = ({ data, title }: DonutChartProps) => {
         cornerRadius: 8,
         displayColors: true,
         callbacks: {
-          label: function (context: any) {
+          label: function (context: { label: string; parsed: number }) {
             return `${context.label}: ${context.parsed}%`;
           },
         },

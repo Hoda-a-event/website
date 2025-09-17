@@ -12,7 +12,8 @@ const Hero = () => {
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-5">
-        <img          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+        <img
+          src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
           alt="Community gathering"
           className="w-full h-full object-cover"
         />
@@ -40,7 +41,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-6 leading-tight"
             >
-              Hoda'a
+              Hoda&apos;a
             </motion.h1>
 
             <motion.p
@@ -58,8 +59,8 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg text-faded-text mb-6 max-w-2xl leading-relaxed"
             >
-              Nigeria's first event marketing platform designed to amplify your
-              reach, boost attendance, and deliver targeted communication
+              Nigeria&apos;s first event marketing platform designed to amplify
+              your reach, boost attendance, and deliver targeted communication
               through the channels your audience actually uses.
             </motion.p>
 
@@ -189,7 +190,7 @@ const Hero = () => {
                         WhatsApp & Email Marketing
                       </h4>
                       <p className="text-sm text-faded-text">
-                        Nigeria's #1 choice
+                        Nigeria&apos;s #1 choice
                       </p>
                     </div>
                   </div>

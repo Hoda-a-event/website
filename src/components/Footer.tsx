@@ -79,7 +79,7 @@ const Footer = () => {
                   height={40}
                   className="w-10 h-10"
                 />
-                <h2 className="text-4xl font-bold">Hoda'a</h2>
+                <h2 className="text-4xl font-bold">Hoda&apos;a</h2>
               </div>
               <p className="text-white/80 text-lg mb-6 leading-relaxed">
                 Connecting Communities. Empowering Events.
@@ -215,7 +215,7 @@ const Footer = () => {
                 className="flex items-center space-x-2 text-white/70"
               >
                 <span>
-                  © 2025 Hoda'a. Connecting Communities, Respectfully.
+                  © 2025 Hoda&apos;a. Connecting Communities, Respectfully.
                 </span>
                 <Heart size={16} className="text-tertiary" />
               </motion.div>
@@ -228,7 +228,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="flex space-x-4"
               >
-                {socialLinks.map((social, index) => (
+                {socialLinks.map((social) => (
                   <motion.a
                     key={social.name}
                     href={social.href}

@@ -49,7 +49,7 @@ const WaitlistPage = () => {
               className="mb-8"
             >
               <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-                Hoda'a
+                Hoda&apos;a
               </h1>
               <p className="text-xl md:text-2xl text-white/90 font-medium">
                 Event Marketing Revolution
@@ -68,7 +68,7 @@ const WaitlistPage = () => {
               </div>
 
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Nigeria's First
+                Nigeria&apos;s First
                 <span className="block bg-gradient-to-r from-green-400 via-yellow-300 to-red-400 bg-clip-text text-transparent">
                   WhatsApp + gmail
                 </span>

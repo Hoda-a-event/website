@@ -95,7 +95,9 @@ const WhatsAppgmailHighlight = () => {
                   </div>
                   <div className="text-left">
                     <h3 className="text-3xl font-bold">{advantage.platform}</h3>
-                    <p className="text-sm opacity-80">Nigeria's #1 platform</p>
+                    <p className="text-sm opacity-80">
+                      Nigeria&apos;s #1 platform
+                    </p>
                   </div>
                 </div>
                 <div className="text-center">
@@ -119,7 +121,7 @@ const WhatsAppgmailHighlight = () => {
             className="bg-gradient-to-r from-primary to-secondary text-white rounded-3xl p-8 max-w-4xl mx-auto mb-12"
           >
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              🚀 Hoda'a is the ONLY platform in Nigeria marketing events
+              🚀 Hoda&apos;a is the ONLY platform in Nigeria marketing events
               directly to WhatsApp & gmail
             </h3>
             <p className="text-xl opacity-90">

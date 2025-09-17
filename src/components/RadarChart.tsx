@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -54,7 +53,7 @@ const RadarChart = ({ data }: RadarChartProps) => {
         borderWidth: 1,
         cornerRadius: 8,
         callbacks: {
-          label: function (context: any) {
+          label: function (context: { label: string; parsed: { r: number } }) {
             return `${context.label}: ${context.parsed.r}%`;
           },
         },

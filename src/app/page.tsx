@@ -6,7 +6,7 @@ import CoreFeatures from "../components/CoreFeatures";
 import SmartNotificationFlow from "../components/SmartNotificationFlow";
 import About from "../components/About";
 import Impact from "../components/Impact";
-import WhatsAppgmailHighlight from "../components/WhatsAppgmailHighlight";
+import WhatsAppgmailHighlight from "@/src/components/WhatsAppGmailHighlight";
 import Footer from "../components/Footer";
 
 export default function Home() {

@@ -20,7 +20,7 @@ const WaitlistForm = () => {
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       setIsSubmitted(true);
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -36,10 +36,12 @@ const WaitlistForm = () => {
         className="text-center bg-white/20 backdrop-blur-sm border border-white/30 rounded-3xl p-8 max-w-md mx-auto"
       >
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-        <h3 className="text-2xl font-bold text-white mb-2">You're In! 🎉</h3>
+        <h3 className="text-2xl font-bold text-white mb-2">
+          You&apos;re In! 🎉
+        </h3>
         <p className="text-white/90 mb-6">
-          Welcome to the exclusive Hoda'a early access list. Get ready for the
-          future of event marketing!
+          Welcome to the exclusive Hoda&apos;a early access list. Get ready for
+          the future of event marketing!
         </p>
         <div className="flex items-center justify-center gap-2 text-green-400 font-semibold">
           <Users size={20} />
