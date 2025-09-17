@@ -10,7 +10,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 
-const WhatsAppGmailHighlight = () => {
+const WhatsAppgmailHighlight = () => {
   const advantages = [
     {
       icon: MessageCircle,
@@ -23,9 +23,9 @@ const WhatsAppGmailHighlight = () => {
     },
     {
       icon: Mail,
-      platform: "Gmail",
+      platform: "gmail",
       stat: "85%",
-      description: "read professional emails regularly",
+      description: "read professional gmails regularly",
       color: "bg-red-500",
       textColor: "text-red-700",
       bgColor: "bg-red-50",
@@ -46,7 +46,7 @@ const WhatsAppGmailHighlight = () => {
     {
       icon: Users,
       title: "Higher Engagement",
-      description: "10x better open rates than traditional email marketing",
+      description: "10x better open rates than traditional gmail marketing",
     },
     {
       icon: TrendingUp,
@@ -73,7 +73,7 @@ const WhatsAppGmailHighlight = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-primary mb-8">
-            Why WhatsApp + Gmail?
+            Why WhatsApp + gmail?
           </h2>
 
           {/* Platform Stats */}
@@ -95,7 +95,9 @@ const WhatsAppGmailHighlight = () => {
                   </div>
                   <div className="text-left">
                     <h3 className="text-3xl font-bold">{advantage.platform}</h3>
-                    <p className="text-sm opacity-80">Nigeria's #1 platform</p>
+                    <p className="text-sm opacity-80">
+                      Nigeria&apos;s #1 platform
+                    </p>
                   </div>
                 </div>
                 <div className="text-center">
@@ -119,11 +121,11 @@ const WhatsAppGmailHighlight = () => {
             className="bg-gradient-to-r from-primary to-secondary text-white rounded-3xl p-8 max-w-4xl mx-auto mb-12"
           >
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              🚀 Hoda'a is the ONLY platform in Nigeria marketing events
-              directly to WhatsApp & Gmail
+              🚀 Hoda&apos;a is the ONLY platform in Nigeria marketing events
+              directly to WhatsApp & gmail
             </h3>
             <p className="text-xl opacity-90">
-              While others send emails to spam folders, we deliver to the apps
+              While others send gmails to spam folders, we deliver to the apps
               Nigerians actually use every day.
             </p>
           </motion.div>
@@ -174,4 +176,4 @@ const WhatsAppGmailHighlight = () => {
   );
 };
 
-export default WhatsAppGmailHighlight;
+export default WhatsAppgmailHighlight;

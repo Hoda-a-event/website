@@ -85,8 +85,8 @@ const UserPersonas = () => {
             Built for Real People
           </h2>
           <p className="text-lg text-faded-text max-w-3xl mx-auto leading-relaxed mb-8">
-            Real Nigerian professionals using WhatsApp & Email marketing to
-            transform their event attendance and community engagement.
+            Real Nigerian professionals using Hoda'a to
+            transform their event promotion and community engagement.
           </p>
 
           {/* WhatsApp & Email Highlight */}

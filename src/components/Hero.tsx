@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
 
+import Link from "next/link";
 const Hero = () => {
   return (
     <section
@@ -40,7 +41,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary mb-6 leading-tight"
             >
-              Hoda'a
+              Hoda&apos;a
             </motion.h1>
 
             <motion.p
@@ -58,8 +59,8 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="text-lg text-faded-text mb-6 max-w-2xl leading-relaxed"
             >
-              Nigeria's first event marketing platform designed to amplify your
-              reach, boost attendance, and deliver targeted communication
+              Nigeria&apos;s first event marketing platform designed to amplify
+              your reach, boost attendance, and deliver targeted communication
               through the channels your audience actually uses.
             </motion.p>
 
@@ -73,7 +74,7 @@ const Hero = () => {
               <div className="flex items-center justify-center space-x-6">
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">W</span>
+                    <span className="text-primary font-bold text-sm">W</span>
                   </div>
                   <span className="font-bold text-green-700">
                     WhatsApp Marketing
@@ -82,7 +83,7 @@ const Hero = () => {
                 <div className="text-primary font-bold">+</div>
                 <div className="flex items-center space-x-2">
                   <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">G</span>
+                    <span className="text-primary font-bold text-sm">G</span>
                   </div>
                   <span className="font-bold text-red-700">
                     Email Marketing
@@ -101,7 +102,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <a
+              <Link
                 href="/waitlist"
                 className="group bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 flex items-center justify-center"
               >
@@ -110,7 +111,7 @@ const Hero = () => {
                   className="ml-2 group-hover:translate-x-1 transition-transform duration-300"
                   size={20}
                 />
-              </a>
+              </Link>
 
               {/* <button className="group bg-white/20 backdrop-blur-sm border border-white/30 text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/30 hover:shadow-lg transition-all duration-300 flex items-center justify-center">
                 <Play
@@ -185,7 +186,7 @@ const Hero = () => {
                         WhatsApp & Email Marketing
                       </h4>
                       <p className="text-sm text-faded-text">
-                        Nigeria's #1 choice
+                        Nigeria&apos;s #1 choice
                       </p>
                     </div>
                   </div>

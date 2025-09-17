@@ -1,37 +1,37 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Target, Shield, Users, Zap } from "lucide-react";
+import { motion } from 'framer-motion';
+import { Target, Shield, Users, Zap } from 'lucide-react';
 
 const About = () => {
   const values = [
     {
       icon: Target,
-      title: "Purpose-Driven",
+      title: 'Purpose-Driven',
       description:
-        "Every feature we build serves the core mission of connecting communities meaningfully.",
-      color: "from-primary to-primary/80",
+        'Every feature we build serves the core mission of connecting communities meaningfully.',
+      color: 'from-primary to-primary/80',
     },
     {
       icon: Shield,
-      title: "Respect-First",
+      title: 'Respect-First',
       description:
-        "User privacy and control are not afterthoughts—they are fundamental to our design.",
-      color: "from-secondary to-secondary/80",
+        'User privacy and control are not afterthoughts—they are fundamental to our design.',
+      color: 'from-secondary to-secondary/80',
     },
     {
       icon: Users,
-      title: "Community-Focused",
+      title: 'Community-Focused',
       description:
-        "Built by understanding real Nigerian communities and their unique communication needs.",
-      color: "from-tertiary to-tertiary/80",
+        'Built by understanding real Nigerian communities and their unique communication needs.',
+      color: 'from-tertiary to-tertiary/80',
     },
     {
       icon: Zap,
-      title: "Innovation",
+      title: 'Innovation',
       description:
-        "Combining cutting-edge technology with deep cultural understanding and user empathy.",
-      color: "from-pink-500 to-pink-600",
+        'Combining cutting-edge technology with deep cultural understanding and user empathy.',
+      color: 'from-pink-500 to-pink-600',
     },
   ];
 
@@ -70,14 +70,14 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-faded-text mb-8 leading-relaxed">
               We discovered a game-changing insight: Nigerians check WhatsApp
-              and Gmail daily, but event organizers were still using outdated
-              methods to reach them. Hoda'a bridges this gap with Nigeria's
-              first WhatsApp + Gmail event marketing platform.
+              and Email daily, but event organizers were still using outdated
+              and noisy methods to reach them. Hoda'a bridges this gap with
+              intelligent and conversational event marketing.
             </p>
             <p className="text-lg text-faded-text leading-relaxed">
               Our revolutionary dual-channel approach transforms event
               marketing, delivering messages where people actually look - their
-              WhatsApp and Gmail.
+              WhatsApp and Email.
             </p>
           </div>
         </motion.div>
@@ -125,30 +125,10 @@ const About = () => {
               Our Mission
             </h3>
             <p className="text-xl text-faded-text leading-relaxed mb-8">
-              "To revolutionize event marketing in Nigeria by delivering
-              targeted, respectful communication through WhatsApp and Gmail -
-              the platforms Nigerians trust and check daily."
+              "To empower creators to build thriving communities through
+              meaningful events, while helping attendees effortlessly discover
+              and engage with experiences that matter most to them."
             </p>
-            <div className="flex justify-center space-x-6">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary">2025</div>
-                <div className="text-faded-text">Founded</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-green-600">
-                  WhatsApp
-                </div>
-                <div className="text-faded-text">Primary Channel</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-red-600">Gmail</div>
-                <div className="text-faded-text">Professional Reach</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-tertiary">#1</div>
-                <div className="text-faded-text">In Nigeria</div>
-              </div>
-            </div>
           </div>
         </motion.div>
       </div>

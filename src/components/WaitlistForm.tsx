@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Mail, CheckCircle, Loader2, Users, Gift, Zap } from "lucide-react";
 
 const WaitlistForm = () => {
-  const [email, setEmail] = useState("");
+  const [gmail, setgmail] = useState("");
   const [name, setName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -20,7 +20,7 @@ const WaitlistForm = () => {
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       setIsSubmitted(true);
-    } catch (err) {
+    } catch {
       setError("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -36,10 +36,12 @@ const WaitlistForm = () => {
         className="text-center bg-white/20 backdrop-blur-sm border border-white/30 rounded-3xl p-8 max-w-md mx-auto"
       >
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-        <h3 className="text-2xl font-bold text-white mb-2">You're In! 🎉</h3>
+        <h3 className="text-2xl font-bold text-white mb-2">
+          You&apos;re In! 🎉
+        </h3>
         <p className="text-white/90 mb-6">
-          Welcome to the exclusive Hoda'a early access list. Get ready for the
-          future of event marketing!
+          Welcome to the exclusive Hoda&apos;a early access list. Get ready for
+          the future of event marketing!
         </p>
         <div className="flex items-center justify-center gap-2 text-green-400 font-semibold">
           <Users size={20} />
@@ -71,10 +73,10 @@ const WaitlistForm = () => {
             </div>
             <div>
               <input
-                type="email"
-                placeholder="Your Email Address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                type="gmail"
+                placeholder="Your gmail Address"
+                value={gmail}
+                onChange={(e) => setgmail(e.target.value)}
                 required
                 className="w-full px-4 py-3 bg-white/90 border border-white/40 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
               />
