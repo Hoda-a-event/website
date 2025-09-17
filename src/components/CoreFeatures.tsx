@@ -1,38 +1,38 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { Calendar, Users, Search, Bell, Target, Shield } from "lucide-react";
+import { motion } from 'framer-motion';
+import { Calendar, Users, Search, Bell, Target, Shield } from 'lucide-react';
 
 const CoreFeatures = () => {
   const eventMarketingFeatures = [
-    { name: "WhatsApp Marketing", value: 95, color: "#25D366" },
-    { name: "Gmail Campaigns", value: 90, color: "#EA4335" },
-    { name: "Event Promotion", value: 85, color: "#F76A4E" },
-    { name: "Audience Targeting", value: 88, color: "#4348C0" },
-    { name: "Performance Analytics", value: 82, color: "#FFB347" },
+    { name: 'WhatsApp Marketing', value: 95, color: '#25D366' },
+    { name: 'Gmail Campaigns', value: 90, color: '#EA4335' },
+    { name: 'Event Promotion', value: 85, color: '#F76A4E' },
+    { name: 'Audience Targeting', value: 88, color: '#4348C0' },
+    { name: 'Performance Analytics', value: 82, color: '#FFB347' },
   ];
 
   const communityFeatures = [
     {
       icon: Users,
-      title: "Group Management",
+      title: 'Group Management',
       description:
-        "Create and manage communities, define member roles (Admin, Member, Subscriber), and build your audience.",
-      gradient: "from-primary to-secondary",
+        'Create and manage communities, define member roles (Admin, Member, Subscriber), and build your audience.',
+      gradient: 'from-primary to-secondary',
     },
     {
       icon: Search,
-      title: "Event Discovery",
+      title: 'Event Discovery',
       description:
-        "A personalized feed and powerful search tools help users find events by category, location, and keywords.",
-      gradient: "from-secondary to-tertiary",
+        'A personalized feed and powerful search tools help users find events by category, location, and keywords.',
+      gradient: 'from-secondary to-tertiary',
     },
     {
       icon: Bell,
-      title: "User-Centric Notifications",
+      title: 'User-Centric Notifications',
       description:
-        "The most powerful feature: a system built on user consent, preference, and control. More on this below.",
-      gradient: "from-tertiary to-primary",
+        'The most powerful feature: a system built on user consent, preference, and control. More on this below.',
+      gradient: 'from-tertiary to-primary',
     },
   ];
 
