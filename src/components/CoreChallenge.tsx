@@ -3,40 +3,41 @@
 import { motion } from 'framer-motion';
 import { MessageSquareX, TrendingDown, ShieldOff } from 'lucide-react';
 
+import Image from 'next/image';
+
 const CoreChallenge = () => {
   const challenges = [
     {
       icon: MessageSquareX,
-      title: 'Information Overload',
+      title: "Information Overload",
       description:
-        'Attendees forget up to 70% of verbal announcements. Generic digital messages are easily lost in the noise of social media feeds',
-      color: 'from-pink-500 to-pink-600',
-      bgColor: 'bg-pink-50',
-      iconColor: 'text-pink-600',
-      image:
-        'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        "Most people forget the majority of spoken announcements, and digital messages often get buried in busy social feeds.",
+      color: "from-pink-500 to-pink-600",
+      bgColor: "bg-pink-50",
+      iconColor: "text-pink-600",
+      image: "/images/information-overload.jpg",
     },
     {
       icon: TrendingDown,
-      title: 'Inefficient Outreach',
+      title: "Inefficient Outreach",
       description:
-        'Event organizers struggle to reach new, genuinely interested audiences beyond their immediate network.',
-      color: 'from-pink-400 to-pink-500',
-      bgColor: 'bg-pink-50',
-      iconColor: 'text-pink-500',
+        "Organizers find it difficult to connect with new, interested audiences outside their usual circles.",
+      color: "from-pink-400 to-pink-500",
+      bgColor: "bg-pink-50",
+      iconColor: "text-pink-500",
       image:
-        'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
     },
     {
       icon: ShieldOff,
-      title: 'Lack of User Control',
+      title: "Lack of User Control",
       description:
-        "Users feel spammed by irrelevant notifications they can't manage, leading to frustration and opt-outs.",
-      color: 'from-red-500 to-red-600',
-      bgColor: 'bg-red-50',
-      iconColor: 'text-red-600',
+        "People are often overwhelmed by irrelevant notifications they can't filter, causing frustration and disengagement.",
+      color: "from-red-500 to-red-600",
+      bgColor: "bg-red-50",
+      iconColor: "text-red-600",
       image:
-        'https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+        "/images/lack-of-control.jpg",
     },
   ];
 
@@ -61,15 +62,15 @@ const CoreChallenge = () => {
             The Core Challenge
           </h2>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-faded-text mb-6 leading-relaxed">
+            <p className="text-lg text-faded-text mb-2 leading-relaxed">
               Organizations struggle with fragmented communication, leading to
               low turn out for events.
             </p>
             <p className="text-lg text-faded-text leading-relaxed">
-              Individuals feel overwhelmed by information overload, missing
+              Individuals are overwhelmed by information overload, and sometimes not even informed, missing out on
               events they care about.
             </p>
-            <p className="text-xl font-semibold text-secondary mt-6">
+            <p className="text-xl font-semibold text-secondary mt-3">
               Hoda'a solves this.
             </p>
           </div>
@@ -94,9 +95,11 @@ const CoreChallenge = () => {
                 <div className="relative z-10">
                   {/* Image */}
                   <div className="mb-6 rounded-2xl overflow-hidden">
-                    <img
+                    <Image
                       src={challenge.image}
                       alt={challenge.title}
+                      width={400}
+                      height={160}
                       className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>

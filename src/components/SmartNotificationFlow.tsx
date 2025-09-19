@@ -28,8 +28,8 @@ const SmartNotificationFlow = () => {
       description:
         "Crucially, it filters the audience against each user's specific opt-outs and DND settings.",
       icon: Settings,
-      color: "from-pink-500 to-pink-600",
-      bgColor: "bg-pink-50",
+      color: "from-primary to-primary/80",
+      bgColor: "bg-primary/10",
     },
     {
       number: 4,
@@ -37,8 +37,8 @@ const SmartNotificationFlow = () => {
       description:
         "Messages are instantly delivered via WhatsApp (primary) and Email (backup) - the two platforms Nigerians check most.",
       icon: Send,
-      color: "from-green-500 to-red-500",
-      bgColor: "bg-gradient-to-r from-green-50 to-red-50",
+      color: "from-secondary to-secondary/80",
+      bgColor: "bg-secondary/10",
     },
   ];
 

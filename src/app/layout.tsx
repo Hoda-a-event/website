@@ -27,11 +27,20 @@ export const metadata: Metadata = {
     "event success",
   ],
   authors: [{ name: "Hoda'a Team" }],
+  icons: {
+    icon: "/images/hodaa-favicon.png",
+    shortcut: "/images/hodaa-favicon.png",
+    apple: "/images/hodaa-favicon.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/images/hodaa-favicon.png",
+    },
+  },
   openGraph: {
     title: "Hoda'a - Revolutionary Event Marketing Platform",
     description:
       "Nigeria's first WhatsApp + gmail event marketing platform. Transform how you promote events and connect with your audience.",
-    images: ["/og.png"],
+    images: ["/images/hodaa-favicon.png"],
     type: "website",
     siteName: "Hoda'a",
     locale: "en_NG",
@@ -41,7 +50,7 @@ export const metadata: Metadata = {
     title: "Hoda'a - Event Marketing Revolution",
     description:
       "Nigeria's first WhatsApp + gmail event marketing platform launching soon. Join the waitlist!",
-    images: ["/og.png"],
+    images: ["/images/hodaa-favicon.png"],
     creator: "@hodaa_ng",
   },
   robots: {

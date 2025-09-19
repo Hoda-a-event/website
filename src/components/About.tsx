@@ -7,31 +7,31 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Purpose-Driven',
+      title: "Purpose-Driven",
       description:
-        'Every feature we build serves the core mission of connecting communities meaningfully.',
-      color: 'from-primary to-primary/80',
+        "Every feature we build serves the core mission of connecting communities meaningfully.",
+      color: "from-primary to-primary/80",
     },
     {
       icon: Shield,
-      title: 'Respect-First',
+      title: "Respect-First",
       description:
-        'User privacy and control are not afterthoughts—they are fundamental to our design.',
-      color: 'from-secondary to-secondary/80',
+        "User privacy and control are not afterthoughts—they are fundamental to our design.",
+      color: "from-secondary to-secondary/80",
     },
     {
       icon: Users,
-      title: 'Community-Focused',
+      title: "Community-Focused",
       description:
-        'Built by understanding real Nigerian communities and their unique communication needs.',
-      color: 'from-tertiary to-tertiary/80',
+        "Built by understanding real Nigerian communities and their unique communication needs.",
+      color: "from-tertiary to-tertiary/80",
     },
     {
       icon: Zap,
-      title: 'Innovation',
+      title: "Innovation",
       description:
-        'Combining cutting-edge technology with deep cultural understanding and user empathy.',
-      color: 'from-pink-500 to-pink-600',
+        "Combining cutting-edge technology with deep cultural understanding and user empathy.",
+      color: "from-primary to-primary/80",
     },
   ];
 
@@ -76,7 +76,7 @@ const About = () => {
             </p>
             <p className="text-lg text-faded-text leading-relaxed">
               Our revolutionary dual-channel approach transforms event
-              marketing, delivering messages where people actually look - their
+              promotion, delivering messages where people actually look - their
               WhatsApp and Email.
             </p>
           </div>

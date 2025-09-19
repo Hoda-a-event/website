@@ -3,60 +3,58 @@
 import { motion } from 'framer-motion';
 import DonutChart from './DonutChart';
 
+
 const UserPersonas = () => {
   const personas = [
     {
-      name: 'Pastor Seyi',
-      role: 'The Community Leader',
+      name: "Pastor Seyi",
+      role: "The Community Leader",
       description:
         "Uses Hoda'a to reach his members and interested audiences about special events and webinars, boosting attendance through targeted messaging.",
-      image:
-        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: "/images/seyi-pics.jpg",
       chartData: {
-        labels: ['WhatsApp Marketing', 'Event Creation', 'Email Campaigns'],
+        labels: ["WhatsApp Marketing", "Event Creation", "Email Campaigns"],
         datasets: [
           {
             data: [60, 25, 15],
-            backgroundColor: ['#25D366', '#003B75', '#EA4335'],
-            borderColor: ['#25D366', '#003B75', '#EA4335'],
+            backgroundColor: ["#25D366", "#003B75", "#EA4335"],
+            borderColor: ["#25D366", "#003B75", "#EA4335"],
             borderWidth: 2,
           },
         ],
       },
     },
     {
-      name: 'Ibrahim',
-      role: 'The Event Enthusiast',
+      name: "Ibrahim",
+      role: "The Event Enthusiast",
       description:
         "Discovers amazing events through Hoda'a notification updates, never missing out on professional networking opportunities.",
-      image:
-        'https://images.unsplash.com/photo-1494790108755-2616b332c3c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: "/images/mich-pics.jpg",
       chartData: {
-        labels: ['WhatsApp Alerts', 'Event Discovery', 'Email Updates'],
+        labels: ["WhatsApp Alerts", "Event Discovery", "Email Updates"],
         datasets: [
           {
             data: [50, 30, 20],
-            backgroundColor: ['#25D366', '#003B75', '#EA4335'],
-            borderColor: ['#25D366', '#003B75', '#EA4335'],
+            backgroundColor: ["#25D366", "#003B75", "#EA4335"],
+            borderColor: ["#25D366", "#003B75", "#EA4335"],
             borderWidth: 2,
           },
         ],
       },
     },
     {
-      name: 'Mr. Chinedu',
-      role: 'The Event Organizer',
+      name: "Mr. Chinedu",
+      role: "The Event Organizer",
       description:
         "Maximizes workshop attendance using Hoda'a to reach new paying customers and grow his audience.",
-      image:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
+      image: "/images/my-pics.jpg",
       chartData: {
-        labels: ['WhatsApp Promotion', 'Email Marketing', 'Event Creation'],
+        labels: ["WhatsApp Promotion", "Email Marketing", "Event Creation"],
         datasets: [
           {
             data: [45, 35, 20],
-            backgroundColor: ['#25D366', '#EA4335', '#003B75'],
-            borderColor: ['#25D366', '#EA4335', '#003B75'],
+            backgroundColor: ["#25D366", "#EA4335", "#003B75"],
+            borderColor: ["#25D366", "#EA4335", "#003B75"],
             borderWidth: 2,
           },
         ],
@@ -65,7 +63,10 @@ const UserPersonas = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-feed-color via-white to-line-color-2 relative overflow-hidden">
+    <section
+      id="features"
+      className="py-20 bg-gradient-to-br from-feed-color via-white to-line-color-2 relative overflow-hidden"
+    >
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-32 left-10 w-72 h-72 bg-secondary/10 rounded-full blur-3xl"></div>
@@ -85,8 +86,8 @@ const UserPersonas = () => {
             Built for Real People
           </h2>
           <p className="text-lg text-faded-text max-w-3xl mx-auto leading-relaxed mb-8">
-            Real Nigerian professionals using Hoda'a to
-            transform their event promotion and community engagement.
+            Real Nigerian professionals using Hoda'a to transform their event
+            promotion and community engagement.
           </p>
 
           {/* WhatsApp & Email Highlight */}
