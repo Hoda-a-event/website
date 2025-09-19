@@ -7,6 +7,7 @@ import { Mail, CheckCircle, Loader2, Users, Gift, Zap } from "lucide-react";
 const WaitlistForm = () => {
   const [gmail, setgmail] = useState("");
   const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [error, setError] = useState("");
@@ -64,7 +65,7 @@ const WaitlistForm = () => {
             <div>
               <input
                 type="text"
-                placeholder="Your Full Name"
+                placeholder=" Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
@@ -73,14 +74,25 @@ const WaitlistForm = () => {
             </div>
             <div>
               <input
-                type="gmail"
-                placeholder="Your gmail Address"
+                type="email"
+                placeholder=" Email Address"
                 value={gmail}
                 onChange={(e) => setgmail(e.target.value)}
                 required
                 className="w-full px-4 py-3 bg-white/90 border border-white/40 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
               />
             </div>
+            <div>
+              <input
+                type="tel"
+                placeholder="Whatsapp Number"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                required
+                className="w-full px-4 py-3 bg-white/90 border border-white/40 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+              />
+            </div>
+            
           </div>
 
           {error && <p className="text-red-400 text-sm mt-2">{error}</p>}

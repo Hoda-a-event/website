@@ -43,9 +43,9 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: Mail, text: 'admin@hodaa.live', href: 'mailto:admin@hodaa.live' },
-    { icon: Phone, text: '+234 (0) 906 953 2735', href: 'tel:+23409069532735' },
-    { icon: MapPin, text: 'Lagos, Nigeria', href: '#' },
+    { icon: Mail, text: "admin@hodaa.live", href: "mailto:admin@hodaa.live" },
+    { icon: Phone, text: "+2348147816715", href: "tel:+2348147816715" },
+    { icon: MapPin, text: "Lagos, Nigeria", href: "#" },
   ];
 
   return (
