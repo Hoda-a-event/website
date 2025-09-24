@@ -68,9 +68,9 @@ const WaitlistPage = () => {
               </div>
 
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                Nigeria&apos;s First
+                Conversational
                 <span className="block bg-gradient-to-r from-green-400 via-yellow-300 to-red-400 bg-clip-text text-transparent">
-                  WhatsApp + gmail
+                  WhatsApp + email
                 </span>
                 Event Marketing Platform
               </h2>
@@ -120,7 +120,7 @@ const WaitlistPage = () => {
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 text-center">
                   <div className="text-2xl mb-2">🎁</div>
                   <p className="text-white font-semibold text-sm">50% OFF</p>
-                  <p className="text-white/70 text-xs">Lifetime Discount</p>
+                  <p className="text-white/70 text-xs">1year Discount</p>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-4 text-center">
                   <div className="text-2xl mb-2">⚡</div>
@@ -145,7 +145,7 @@ const WaitlistPage = () => {
             >
               <div className="flex items-center justify-center gap-8 text-white/80">
                 <div className="text-center">
-                  <div className="text-xl font-bold">1,247</div>
+                  <div className="text-xl font-bold">100+</div>
                   <div className="text-xs">People Waiting</div>
                 </div>
                 <div className="w-px h-8 bg-white/30"></div>

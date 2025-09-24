@@ -1,28 +1,50 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { Mail, CheckCircle, Loader2, Users, Gift, Zap } from "lucide-react";
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Mail, CheckCircle, Loader2, Users, ArrowRight } from 'lucide-react';
 
 const WaitlistForm = () => {
-  const [gmail, setgmail] = useState("");
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
+  const [gmail, setgmail] = useState('');
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [countryCode, setCountryCode] = useState('+234');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setError("");
+    setError('');
 
-    // Simulate API call
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const normalizedLocal = phone.trim().replace(/^0+/, '');
+      const payload = {
+        email: gmail,
+        phoneNumber: `${countryCode}${normalizedLocal}`,
+        name: name,
+      };
+
+      const res = await fetch('https://api.hodaa.live/api/v1/join-waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        const msg = data?.message || data?.error || 'Failed to join waitlist';
+        throw new Error(msg);
+      }
+
       setIsSubmitted(true);
-    } catch {
-      setError("Something went wrong. Please try again.");
+    } catch (err: unknown) {
+      let message = 'Something went wrong. Please try again.';
+      if (err instanceof Error) message = err.message;
+      setError(message);
     } finally {
       setIsSubmitting(false);
     }
@@ -46,7 +68,7 @@ const WaitlistForm = () => {
         </p>
         <div className="flex items-center justify-center gap-2 text-green-400 font-semibold">
           <Users size={20} />
-          <span>Position #1,247 in queue</span>
+          <span>Position #1,209 in queue</span>
         </div>
       </motion.div>
     );
@@ -83,26 +105,50 @@ const WaitlistForm = () => {
               />
             </div>
             <div>
-              <input
-                type="tel"
-                placeholder="Whatsapp Number"
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                required
-                className="w-full px-4 py-3 bg-white/90 border border-white/40 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
-              />
+              <label className="sr-only" htmlFor="countryCode">
+                Country code
+              </label>
+              <div className="flex items-center gap-0">
+                <select
+                  id="countryCode"
+                  aria-label="Country code"
+                  value={countryCode}
+                  onChange={(e) => setCountryCode(e.target.value)}
+                  className="w-28 px-3 py-3 bg-white/90 border border-white/40 rounded-l-xl text-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+                >
+                  <option value="+234">🇳🇬 +234</option>
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <option value="+91">🇮🇳 +91</option>
+                  <option value="+254">🇰🇪 +254</option>
+                  <option value="+27">🇿🇦 +27</option>
+                  <option value="+233">🇬🇭 +233</option>
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+7">🇷🇺 +7</option>
+                </select>
+
+                <input
+                  type="tel"
+                  placeholder="Phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  required
+                  className="flex-1 px-4 py-3 bg-white/90 border-t border-b border-r border-white/40 rounded-r-xl focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+                />
+              </div>
             </div>
-            
           </div>
 
           {error && <p className="text-red-400 text-sm mt-2">{error}</p>}
 
           <motion.button
             type="submit"
+            aria-label="Join the waitlist"
+            title="Join the waitlist"
             disabled={isSubmitting}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
-            className="w-full mt-6 bg-gradient-to-r from-green-500 via-primary to-red-500 text-white font-bold py-4 rounded-xl hover:shadow-2xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            className="w-full mt-6 bg-gradient-to-r from-green-500 via-green-600 to-emerald-500 text-white font-semibold text-lg py-3 rounded-full shadow-lg transform-gpu focus:outline-none focus:ring-4 focus:ring-green-300/40 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-3"
           >
             {isSubmitting ? (
               <>
@@ -111,30 +157,14 @@ const WaitlistForm = () => {
               </>
             ) : (
               <>
-                <Mail size={20} />
-                Join the Waitlist
+                <span className="flex items-center gap-3">
+                  <Mail size={18} />
+                  <span>Join the Waitlist</span>
+                </span>
+                <ArrowRight size={18} className="opacity-90" />
               </>
             )}
           </motion.button>
-        </div>
-
-        {/* Early Bird Benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-6">
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center">
-            <Gift className="w-6 h-6 text-yellow-400 mx-auto mb-1" />
-            <p className="text-white text-xs font-semibold">50% OFF</p>
-            <p className="text-white/80 text-xs">First Year</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center">
-            <Zap className="w-6 h-6 text-blue-400 mx-auto mb-1" />
-            <p className="text-white text-xs font-semibold">VIP Support</p>
-            <p className="text-white/80 text-xs">Priority Access</p>
-          </div>
-          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-3 text-center">
-            <Users className="w-6 h-6 text-green-400 mx-auto mb-1" />
-            <p className="text-white text-xs font-semibold">Exclusive</p>
-            <p className="text-white/80 text-xs">Beta Features</p>
-          </div>
         </div>
       </form>
     </motion.div>
